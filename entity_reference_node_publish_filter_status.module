@@ -1,0 +1,19 @@
+<?php
+/**
+* @file
+* Filter Node Entity Reference by publish status
+*/
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ * Include our entity reference plugins
+ */
+function entity_reference_node_publish_filter_status_ctools_plugin_directory(
+    $owner,
+    $plugin_type
+)
+{
+    if ($owner == 'entityreference' && $plugin_type == 'selection') {
+        return 'plugins/entityreference/' . $plugin_type;
+    }
+}

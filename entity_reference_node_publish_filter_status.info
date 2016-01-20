@@ -1,0 +1,3 @@
+name = Entity Reference Node Publish Filter Status
+description = Filter Node Entity Reference only if the Node is published
+core = 7.x
